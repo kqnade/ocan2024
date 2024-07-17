@@ -3,7 +3,7 @@ name: Build and Release
 on:
   push:
     branches:
-      - main  # Trigger on push to main branch
+      - main
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
 
       - name: Build with make
         run: |
-          make  # Run your build command that generates ./tictactoe
+          make
 
       - name: Create Release
         id: create_release
